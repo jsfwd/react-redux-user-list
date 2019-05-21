@@ -1,0 +1,53 @@
+$color__background-body: #fff;
+$color__background-hr: #ccc;
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	/* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+body {
+	background: $color__background-body;
+}
+
+hr {
+	background-color: $color__background-hr;
+	border: 0;
+	height: 0.1rem;
+	margin-bottom: $base__spacing;
+}
+
+figure {
+	margin: $base__spacing 0;
+}
+
+iframe {
+	border: 0;
+}
+
+@media screen and (min-width: $screen-md-min) {
+	.visible-small {
+		display: none;
+	}
+}
+
+@media screen and (max-width: $screen-md) {
+	.visible-large {
+		display: none;
+	}
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+
+//@import 'images';
+//@import 'lists';
+//@import 'tables';
+@import 'section';

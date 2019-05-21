@@ -1,0 +1,30 @@
+$color__background-button: $color__link;
+$color__background-button-hover: $color__link-hover;
+$color__border-button: $color__link-border;
+$color__border-button-hover: $color__link-border;
+$color__border-button-focus: $color__link-border;
+
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+	border: 0.1rem solid;
+	border-color: $color__border-button;
+	border-radius: $base__rounded-lg;
+	background: $color__background-button;
+	color: rgba(0, 0, 0, 0.8);
+	padding: $base__spacing-sm $base__spacing;
+	color: $color__text-reverse;
+	text-transform: uppercase;
+	cursor: pointer;
+
+	&:hover,
+	&:focus {
+		background-color: $color__background-button-hover;
+		border-color: $color__border-button-hover;
+	}
+
+	&:active {
+		border-color: $color__border-button-focus;
+	}
+}

@@ -1,0 +1,46 @@
+$color__border-input: $color__border-light;
+$color__text-input: $color__text-main;
+$color__text-input-focus: #000;
+$color__required: red;
+
+input[type='text'],
+input[type='email'],
+input[type='url'],
+input[type='password'],
+input[type='search'],
+input[type='number'],
+input[type='tel'],
+input[type='range'],
+input[type='date'],
+input[type='month'],
+input[type='week'],
+input[type='time'],
+input[type='datetime'],
+input[type='datetime-local'],
+input[type='color'],
+textarea {
+	color: $color__text-input;
+	border: 0.1rem solid $color__border-input;
+	border-radius: $base__rounded;
+	padding: $base__spacing-sm;
+
+	&:focus {
+		color: $color__text-input-focus;
+	}
+}
+
+select {
+	border: 0.1rem solid $color__border-input;
+}
+
+textarea {
+	width: 100%;
+}
+
+label {
+	font-weight: 600;
+
+	.required {
+		color: $color__required;
+	}
+}

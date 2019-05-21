@@ -1,0 +1,55 @@
+@import '../../assets/theme/component';
+
+.users-add {
+	/*margin-bottom: $base__spacing;
+	padding: $base__spacing;*/
+	background: $color_bg-light;
+	border: 0.1rem solid $color__border-light;
+	border-radius: $base__rounded;
+}
+
+form {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+input {
+	flex-grow: 1;
+}
+
+label {
+	margin-right: $base__spacing-sm;
+}
+
+$field__label-width: 9rem;
+
+.field {
+}
+
+@media screen and (max-width: $screen-sm-max) {
+	.field {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		overflow: hidden;
+		width: 100%;
+		margin-bottom: $base__spacing-sm;
+
+		label {
+			min-width: $field__label-width;
+		}
+
+		input {
+			flex-grow: 1;
+		}
+	}
+	.users-add__submit {
+		margin-left: $field__label-width;
+	}
+}
+
+@media screen and (min-width: $screen-sm-min) {
+	.field {
+		margin-right: $base__spacing;
+	}
+}

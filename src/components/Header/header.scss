@@ -1,0 +1,37 @@
+//@import '../../assets/theme/component';
+@import '../../assets/theme/variables/variables';
+
+$header__color-background: #000;
+$header__color-text: #fff;
+$header__color-border: #ccc;
+$header__padding: 6.6rem $site__gutter 1.5rem $site__gutter;
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+	margin-bottom: $base__spacing;
+	padding: $header__padding;
+	background: $header__color-background;
+	color: $header__color-text;
+	border-bottom: $header__color-border;
+
+	h1 {
+		margin: 0;
+	}
+
+	@media screen and (max-width: $screen-sm) {
+		& {
+			flex-direction: column;
+			justify-content: center;
+		}
+	}
+
+	a,
+	a:visited,
+	a:hover,
+	a:active {
+		color: $header__color-text;
+	}
+}

@@ -1,0 +1,38 @@
+/**
+ * Set default site gutters
+ */
+/*.app-header,
+.app--footer,
+.app-content {
+	padding-left: $base__spacing;
+	padding-right: $base__spacing;
+}*/
+
+/**
+ * Set site max-width
+ */
+.app-container {
+	position: relative;
+	max-width: $size__site-max-width;
+	margin: 0 auto;
+	padding: 0 $base__spacing;
+}
+
+.app-container-wide {
+	position: relative;
+	max-width: $size__site-max-width-wide;
+	margin: 0 auto;
+}
+
+/**
+ * Full-width
+ * @see https://css-tricks.com/full-width-containers-limited-width-parents
+ */
+.app--full-width {
+	width: 100vw;
+	position: relative;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+}

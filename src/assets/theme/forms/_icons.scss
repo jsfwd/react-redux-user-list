@@ -1,0 +1,45 @@
+.user__action {
+	display: block;
+	width: $icons__size;
+	height: $icons__size;
+	background: url(/images/icons/utility/add.svg) 0 0 no-repeat;
+	transition: background 0.2s ease-in-out;
+	background-size: cover;
+	padding: 0;
+	border: 0;
+	overflow: hidden;
+	text-indent: -999rem;
+	cursor: pointer;
+
+	&:hover,
+	&:focus {
+		background-image: url(/images/icons/utility/add-box.svg);
+		background-color: transparent;
+		border-color: transparent;
+	}
+}
+
+.user__action-add {
+	width: $icons__size-lg;
+	height: $icons__size-lg;
+	background-image: url(/images/icons/utility/add.svg);
+	transition: background 0.2s ease-in-out, transform 0.15s;
+
+	&:hover,
+	&:focus {
+		background-image: url(/images/icons/utility/add-circle.svg);
+		transform: rotate(90deg);
+	}
+}
+
+.user__action-delete {
+	position: absolute;
+	top: $base__spacing;
+	right: $base__spacing;
+	background-image: url(/images/icons/utility/remove.svg);
+
+	&:hover,
+	&:focus {
+		background-image: url(/images/icons/utility/remove-circle.svg);
+	}
+}

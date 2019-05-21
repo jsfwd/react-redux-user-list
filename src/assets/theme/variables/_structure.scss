@@ -1,0 +1,37 @@
+// size/dimensions
+$size__site-main: 100%;
+$size__site-max-width: 96rem;
+$size__site-max-width-wide: 160rem;
+
+// fonts
+$fonts__size: 1.6;
+$fonts__size-sm: 1.4;
+$fonts__size-xs: 1.2;
+
+// base spacing
+$site__gutter: 5rem;
+$base__line-height: 1.5;
+$base__spacing: $base__line-height * 1rem;
+$base__spacing-sm: $base__spacing / 2;
+$base__spacing-md: $base__spacing * 2;
+$base__spacing-lg: $base__spacing * 3;
+
+// rounded corners
+$base__rounded: 0.3rem;
+$base__rounded-lg: 0.8rem;
+$base__rounded-button: 10rem;
+
+// borders
+$base__border: 0.1rem solid $color__border;
+$header__border: 0.1rem solid $color__border;
+$footer__border: 0.1rem solid $color__border;
+
+// links/buttons/inputs...
+$input__spacer: 1rem;
+$input__border-radius: 0.4rem;
+$input__padding-horizontal: 1.2rem;
+$input__padding-vertical: 0.6rem;
+
+// utility icons
+$icons__size: 2.4rem;
+$icons__size-lg: 4rem;

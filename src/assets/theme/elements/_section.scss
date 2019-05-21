@@ -1,0 +1,15 @@
+section {
+	max-width: $size__site-max-width;
+	margin: 0 auto ($base__spacing * 2) auto;
+	padding: $base__spacing;
+
+	&.section--full-width {
+		padding: 0;
+	}
+
+	/*@media screen and (min-width: $screen-sm) {
+		& {
+			padding: $base__spacing-lg;
+		}
+	}*/
+}

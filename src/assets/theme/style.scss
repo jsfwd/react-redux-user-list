@@ -1,0 +1,67 @@
+/*!
+Theme Name: Minimal
+Theme URI: https://github.com/jsfwd/
+Author: Jocelyn Stretton
+Author URI: https://github.com/jsfwd/
+Description: Minimal theme with no dependency on external frameworks
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain:
+Tags: 
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Variables
+# Mixins
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Layout
+--------------------------------------------------------------*/
+@import 'variables/variables';
+@import 'mixins/mixins-master';
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+@import 'normalize';
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+@import 'typography/typography';
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+@import 'elements/elements';
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+@import 'forms/forms';
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+@import 'navigation/navigation';
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+@import 'modules/accessibility';
+
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+@import 'layout/_layout';
